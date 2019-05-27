@@ -7,7 +7,7 @@ Facial images Classification
 An implementation of a convolutional neural network image classification 
 algorithm. 40 people’s faces are used to train and test this classifier. 
 The best test accuracy achieved so far as been 96.25% when the data is shared 
-80% training and 20% testing. Ratio can be changed at first line of code.
+80% training and 20% testing. Ratio can be changed on first line of code.
 
 
 Instructions
@@ -34,3 +34,21 @@ Implemented using python3 and tensorflow with dependencies;
 >> pandas
 >> numpy
 >> cv2
+
+
+Training
+========
+
+8 out of 10 images of each of the different 40 classes were used for training and validation. 2 out of 10 of each of the faces were used for testing.
+
+Loss function: cross entropy
+Optimising algorithm: momentum optimizer (learning rate = 0.001, momentum = 0.9)
+Total number of epochs: 150
+
+
+
+Results
+=======
+
+The model achieved a training accuracy of 
+
