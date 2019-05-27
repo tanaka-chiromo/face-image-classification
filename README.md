@@ -123,5 +123,5 @@ Training
 Results
 =======
 
-The model achieved a training accuracy of 
+The model correctly classified 77 out of 80 samples in the test set. 
 
