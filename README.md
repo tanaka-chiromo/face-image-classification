@@ -99,6 +99,7 @@ Model
 >> Fully Connected layer
 
 -size 1024
+-activation function =  Relu
 
 >> Output layer
 
