@@ -42,14 +42,67 @@ Model
 =====
 >> Input image size = 224 x 224
 
->> Layer 1
+>> Covolutional Layer
 
--strides = [1,4,4,1]
+-size = 11 x 11
 
--convolutional layer = 11 x 11
+-strides = 4 x 4
 
 -activation function =  Relu
 
+
+>> Pooling layer
+
+-size = 2 x 2
+
+-strides = 3 x 3
+
+
+>> Covolutional Layer
+
+-size = 5 x 5
+
+-strides = 4 x 4
+
+-activation function =  Relu
+
+>> Pooling layer
+
+-size = 2 x 2
+
+-strides = 3 x 3
+
+>> Covolutional Layer
+
+-size = 3 x 3
+
+-strides = 4 x 4
+
+-activation function =  Relu
+
+>> Covolutional Layer
+
+-size = 3 x 3
+
+-strides = 4 x 4
+
+-activation function =  Relu
+
+>> Covolutional Layer
+
+-size = 3 x 3
+
+-strides = 4 x 4
+
+-activation function =  Relu
+
+>> Fully Connected layer
+
+-size 1024
+
+>> Output layer
+
+-size = 40
 
 Training
 ========
