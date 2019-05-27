@@ -234,19 +234,19 @@ def deepnn(x):
     # Pooling layer - downsamples by 2X.
     pool_c2 = tf.nn.max_pool(h_conv2, ksize=[1, 2, 2, 1],strides=[1, 3, 3, 1], padding='SAME')
 
-    # 3rd convolutional layer - maps one grayscale image to 32 feature maps.
+    # 3rd convolutional layer 
     W_conv3 = weight_variable([3, 3, 256, 384])
     b_conv3 = bias_variable([384])
     conv3 = tf.nn.conv2d(pool_c2, W_conv3, strides=[1,4,4,1], padding='SAME') + b_conv3
     h_conv3 = tf.nn.relu(conv3)
 
-    # 4th convolutional layer - maps one grayscale image to 32 feature maps.
+    # 4th convolutional layer 
     W_conv4 = weight_variable([3, 3, 384, 384])
     b_conv4 = bias_variable([384])
     conv4 = tf.nn.conv2d(h_conv3, W_conv4, strides=[1,4,4,1], padding='SAME') + b_conv4
     h_conv4 = tf.nn.relu(conv4)
 
-    # 5th convolutional layer - maps one grayscale image to 32 feature maps.
+    # 5th convolutional layer 
     W_conv5 = weight_variable([3, 3, 384, 256])
     b_conv5 = bias_variable([256])
     conv5 = tf.nn.conv2d(h_conv4, W_conv5, strides=[1,4,4,1], padding='SAME') + b_conv5
