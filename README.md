@@ -38,11 +38,25 @@ Implemented using python3 and tensorflow with dependencies;
 
 >> cv2
 
+Model
+=====
+>> Input image size = 224 x 224
+
+>> Layer 1
+
+strides = [1,4,4,1]
+
+11 x 11 convolutional layer
+
+activation function: Relu
+
 
 Training
 ========
 
 8 out of 10 images of each of the different 40 classes were used for training and validation. 2 out of 10 of each of the faces were used for testing.
+
+>> Number of batches = 32
 
 >> Loss function: cross entropy
 
