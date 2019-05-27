@@ -31,8 +31,11 @@ Dependencies
 Implemented using python3 and tensorflow with dependencies;
 
 >> tensorflow
+
 >> pandas
+
 >> numpy
+
 >> cv2
 
 
