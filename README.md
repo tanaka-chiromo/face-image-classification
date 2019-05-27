@@ -44,11 +44,11 @@ Model
 
 >> Layer 1
 
-strides = [1,4,4,1]
+-strides = [1,4,4,1]
 
-11 x 11 convolutional layer
+-convolutional layer = 11 x 11
 
-activation function: Relu
+-activation function =  Relu
 
 
 Training
