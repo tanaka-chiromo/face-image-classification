@@ -44,9 +44,11 @@ Training
 
 8 out of 10 images of each of the different 40 classes were used for training and validation. 2 out of 10 of each of the faces were used for testing.
 
-Loss function: cross entropy
-Optimising algorithm: momentum optimizer (learning rate = 0.001, momentum = 0.9)
-Total number of epochs: 150
+>> Loss function: cross entropy
+
+>> Optimising algorithm: momentum optimizer (learning rate = 0.001, momentum = 0.9)
+
+>> Total number of epochs: 150
 
 
 
